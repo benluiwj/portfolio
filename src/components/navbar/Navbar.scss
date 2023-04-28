@@ -21,6 +21,8 @@ nav.navbar {
 		width: 100%;
 		border-right: 1px solid black;
 		border-left: 1px solid black;
+		font-family: 'Roboto';
+		letter-spacing: -.1em;
 
 	}
 
@@ -29,12 +31,18 @@ nav.navbar {
 	}
 
 	.navbar-menu {
+		font-family: 'Poppins';
+		font-weight: 600;
+		font-style: normal;
+		letter-spacing: .05em;
+		text-transform: uppercase;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
 	.navbar-menu-text {
+
 		font-size:medium
 	}
 }

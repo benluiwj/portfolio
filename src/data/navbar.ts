@@ -1,4 +1,4 @@
-export const headerName: string = "Ben";
+export const headerName: string = "Benjamin Lui";
 
 export const menuName: string = "Menu";
 
