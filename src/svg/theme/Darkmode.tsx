@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-export const LightMode = (): ReactElement<void, "svg"> => (
+export const DarkMode = (): ReactElement<void, "svg"> => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"

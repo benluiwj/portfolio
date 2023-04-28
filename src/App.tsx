@@ -1,11 +1,14 @@
 import "./App.scss";
 import { Navbar } from "./components/navbar/Navbar";
+import ThemeProvider from "./context/themeContext";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Navbar />
+      </div>
+    </ThemeProvider>
   );
 }
 
