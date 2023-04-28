@@ -1,0 +1,35 @@
+nav.navbar {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	max-width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+	
+
+	.navbar-socials {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		
+	}
+
+	.navbar-name {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+
+	}
+
+	.navbar-header-text {
+		font-size: xx-large;
+	}
+
+	.navbar-menu {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+}

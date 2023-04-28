@@ -1,0 +1,35 @@
+.button {
+	background-color: transparent;
+	border: 0;
+	color: black;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	transition: color 0.5s;
+  }
+  
+  button.is-like-link {
+	border-bottom: 2px solid black;
+	color: black;
+	margin-bottom: 6px;
+	padding: 0 0 2px;
+	transition: padding-bottom 200ms ease, border-bottom 200ms ease,
+	  margin-bottom 200ms ease, color 0.5s;
+  
+	&:hover {
+	  border-bottom-color: transparent;
+	  cursor: pointer;
+	  margin-bottom: 4px;
+	  padding-bottom: 4px;
+  
+	  @include from($tablet) {
+		margin-bottom: 0;
+		padding-bottom: 8px;
+	  }
+	}
+  
+	@include from($tablet) {
+	  margin-bottom: 3px;
+	  padding-bottom: 5px;
+	}
+  }
