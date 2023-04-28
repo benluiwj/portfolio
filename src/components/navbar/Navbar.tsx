@@ -1,8 +1,9 @@
 import { ReactElement } from "react";
 import "./Navbar.scss";
-import { Linkedin } from "../../svg/Linkedin";
-import { Github } from "../../svg/Github";
+import { Linkedin } from "../../svg/socials/Linkedin";
+import { Github } from "../../svg/socials/Github";
 import { Icon } from "../icons/Icon";
+import { headerName, menuName } from "../../data/navbar";
 
 export function Navbar(): ReactElement<"nav"> {
   return (
@@ -12,10 +13,10 @@ export function Navbar(): ReactElement<"nav"> {
         <Icon icon={<Github />} />
       </div>
       <div className="navbar-name">
-        <div className="navbar-header-text">Ben</div>
+        <div className="navbar-header-text">{headerName}</div>
       </div>
       <div className="navbar-menu">
-        <p>Menu</p>
+        <div className="navbar-menu-text">{menuName}</div>
       </div>
     </nav>
   );

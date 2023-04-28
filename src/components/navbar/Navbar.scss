@@ -4,6 +4,7 @@ nav.navbar {
 	max-width: 90%;
 	margin: 0 auto;
 	border-bottom: 1px solid black;
+	height: 7.5vh;
 	
 
 	.navbar-socials {
@@ -29,7 +30,11 @@ nav.navbar {
 
 	.navbar-menu {
 		display: flex;
-		align-content: center;
 		justify-content: center;
+		align-items: center;
+	}
+
+	.navbar-menu-text {
+		font-size:medium
 	}
 }
