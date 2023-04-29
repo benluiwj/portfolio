@@ -1,23 +1,17 @@
-import { ReactElement, useState } from "react";
-import { motion } from "framer-motion";
-import { DarkMode } from "../../svg/theme/Darkmode";
-import { Icon } from "../icons/Icon";
-import { LightMode } from "../../svg/theme/Lightmode";
-
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-};
+import { ReactElement } from "react";
+import { useThemeContext } from "../../context/themeContext";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 export function DarkModeToggle(): ReactElement<"button"> {
-  const [isDark, setIsDark] = useState<Boolean>(false);
+  const { isDarkMode, handleThemeChange } = useThemeContext();
+
   return (
-    <motion.button
-      animate={isDark ? "moon" : "sun"}
-      variants={variants}
-      onClick={() => setIsDark(!isDark)}
-    >
-      {isDark ? <Icon icon={<DarkMode />} /> : <Icon icon={<LightMode />} />}
-    </motion.button>
+    <DarkModeSwitch
+      checked={isDarkMode}
+      onChange={handleThemeChange}
+      size={24}
+      sunColor="#eb5c60"
+      moonColor="#53b7b9"
+    />
   );
 }

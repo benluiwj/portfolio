@@ -3,6 +3,7 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
 } from "react";
@@ -14,13 +15,13 @@ type Props = {
 };
 
 type ThemeContextType = {
-  theme: string;
-  handleThemeChange: (_: void) => void;
+  isDarkMode: boolean;
+  handleThemeChange: (_: boolean) => void;
 };
 
 const defaultThemeContext = {
-  theme: "",
-  handleThemeChange: (_: void) => {},
+  isDarkMode: false,
+  handleThemeChange: (_: boolean) => {},
 };
 
 // ----------------------------------------------------------------------
@@ -28,16 +29,26 @@ const defaultThemeContext = {
 export default function ThemeProvider({
   children,
 }: Props): ReactElement<React.ReactNode> {
-  const [theme, setTheme] = useState<string>("light");
+  const [isDarkMode, setDarkMode] = useState<boolean>(false);
 
-  const handleThemeChange = useCallback(() => {
-    setTheme(theme === "light" ? "dark" : "light");
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+  useEffect(() => {
+    const cachedTheme = localStorage.getItem("theme");
+    console.log(cachedTheme);
+    if (cachedTheme) {
+      setDarkMode(cachedTheme === "dark");
+      document.documentElement.className = cachedTheme === "dark" ? "dark" : "";
+    }
+  }, []);
+
+  const handleThemeChange = useCallback((checked: boolean) => {
+    setDarkMode(checked);
+    localStorage.setItem("theme", checked ? "dark" : "light");
+    document.documentElement.className = checked ? "dark" : "";
+  }, []);
 
   const value = useMemo(
-    () => ({ theme, handleThemeChange }),
-    [theme, handleThemeChange]
+    () => ({ isDarkMode, handleThemeChange }),
+    [isDarkMode, handleThemeChange]
   );
 
   return (
