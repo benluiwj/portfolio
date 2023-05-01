@@ -18,7 +18,7 @@ export function Header(): ReactElement<"div"> {
         <DarkModeToggle />
       </div>
       <div className="header-name">
-        <div className="header-text">{headerName}</div>
+        <h1 className="title is-1">{headerName}</h1>
       </div>
       <Menu />
     </div>
