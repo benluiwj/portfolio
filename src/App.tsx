@@ -1,12 +1,12 @@
 import "./App.scss";
-import { Navbar } from "./components/navbar/Navbar";
+import { Header } from "./components/header/Header";
 import ThemeProvider from "./context/themeContext";
 
 function App() {
   return (
     <ThemeProvider>
       <div className="App">
-        <Navbar />
+        <Header />
       </div>
     </ThemeProvider>
   );

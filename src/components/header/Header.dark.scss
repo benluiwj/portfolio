@@ -1,4 +1,4 @@
-.dark nav.navbar {
+.dark .header {
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr;
 	max-width: 90%;
@@ -7,14 +7,14 @@
 	height: 7.5vh;
 	
 
-	.navbar-socials {
+	.header-socials {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		
 	}
 
-	.navbar-name {
+	.header-name {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -26,23 +26,9 @@
 
 	}
 
-	.navbar-header-text {
+	.header-header-text {
 		font-size: xx-large;
 	}
 
-	.navbar-menu {
-		font-family: 'Poppins';
-		font-weight: 600;
-		font-style: normal;
-		letter-spacing: .05em;
-		text-transform: uppercase;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 
-	.navbar-menu-text {
-
-		font-size:medium
-	}
 }
