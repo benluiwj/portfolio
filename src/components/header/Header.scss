@@ -1,36 +1,24 @@
-.header {
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	max-width: 90%;
-	margin: 0 auto;
-	border-bottom: 1px solid black;
-	height: 7.5vh;
-	
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/components/navbar.sass";
+@import '../../styles/generic.scss';
 
-	.header-socials {
+.navbar {
+	background-color: transparent;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 5%;
+	padding-top: 3%;
+
+	.navbar-brand-neighbor {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
 		align-items: center;
+		margin-bottom: 1.5rem;
+		margin-left: auto;
 		
 	}
 
-	.title {
-		color: black;
-	}
 
-	.header-name {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		border-right: 1px solid black;
-		border-left: 1px solid black;
-		font-family: 'Roboto';
-		letter-spacing: -.1em;
-
-	}
-
+	
 
 
 }

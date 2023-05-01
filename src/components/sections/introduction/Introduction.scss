@@ -1,0 +1,16 @@
+@import 'bulma/bulma.sass';
+
+
+.introduction {
+	margin: 0 auto;
+	max-width: 80%;
+	padding-top: 2vh;
+	height: 100vh;
+
+	.columns .column.is-half .title {
+		color: black;
+	}
+	.columns .column.is-two-third .subtitle{
+		color: black;
+	}
+}

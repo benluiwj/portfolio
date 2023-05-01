@@ -1,0 +1,14 @@
+@import './generic.scss';
+
+html.dark {
+	background-color: $dark-mode-primary-color;
+	transition: background-color 0.5s;
+  }
+  
+  .dark {
+	body {
+	  background-color: $dark-mode-primary-color;
+	  color: white;
+	}
+  }
+  

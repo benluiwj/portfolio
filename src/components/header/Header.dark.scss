@@ -1,37 +1,18 @@
-.dark .header {
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	max-width: 90%;
+@import '../../styles/generic.scss';
+
+.dark .navbar {
+	background-color: transparent;
+	width: 90%;
 	margin: 0 auto;
-	border-bottom: 1px solid white;
-	height: 9.5vh;
-	
+	padding-bottom: 5%;
+	padding-top: 3%;
 
-	.header-socials {
+	.navbar-brand-neighbor {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		
-	}
-
-	.title {
-		color: white;
-	}
-
-	.header-name {
-		display: flex;
-		justify-content: center;
 		align-items: center;
-		width: 100%;
-		border-right: 1px solid white;
-		border-left: 1px solid white;
-		font-family: 'Roboto';
-		letter-spacing: -.1em;
-
-	}
-
-	.header-header-text {
-		font-size: xx-large;
+		margin-bottom: 1.5rem;
+		margin-left: auto;
+		
 	}
 
 
