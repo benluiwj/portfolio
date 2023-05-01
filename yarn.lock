@@ -1593,7 +1593,7 @@
 
 "@react-spring/animated@~9.7.2":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/animated/-/animated-9.7.2.tgz#0119db8075e91d693ec45c42575541e01b104a70"
+  resolved "https://registry.npmjs.org/@react-spring/animated/-/animated-9.7.2.tgz"
   integrity sha512-ipvleJ99ipqlnHkz5qhSsgf/ny5aW0ZG8Q+/2Oj9cI7LCc7COdnrSO6V/v8MAX3JOoQNzfz6dye2s5Pt5jGaIA==
   dependencies:
     "@react-spring/shared" "~9.7.2"
@@ -1601,7 +1601,7 @@
 
 "@react-spring/core@~9.7.1", "@react-spring/core@~9.7.2":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/core/-/core-9.7.2.tgz#804ebadee45a6adff00886454d6f1c5d97ee219d"
+  resolved "https://registry.npmjs.org/@react-spring/core/-/core-9.7.2.tgz"
   integrity sha512-fF512edZT/gKVCA90ZRxfw1DmELeVwiL4OC2J6bMUlNr707C0h4QRoec6DjzG27uLX2MvS1CEatf9KRjwZR9/w==
   dependencies:
     "@react-spring/animated" "~9.7.2"
@@ -1611,7 +1611,7 @@
 
 "@react-spring/konva@~9.7.1":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/konva/-/konva-9.7.2.tgz#58ebae0d24b8887a24d2d6ed0e9dd08842632aa7"
+  resolved "https://registry.npmjs.org/@react-spring/konva/-/konva-9.7.2.tgz"
   integrity sha512-xMA0XkIyv02euso8BGlLA4iXVJ76p6WCjABMTjdvcp//KvIub596vLwoLzmqHYjqRhH7BP4UQKxzhHvM7AylQA==
   dependencies:
     "@react-spring/animated" "~9.7.2"
@@ -1621,7 +1621,7 @@
 
 "@react-spring/native@~9.7.1":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/native/-/native-9.7.2.tgz#dcf5cae844ec8693fa893f7fc3a15420523c2129"
+  resolved "https://registry.npmjs.org/@react-spring/native/-/native-9.7.2.tgz"
   integrity sha512-Ltq/F+4jY7aqHW1/f1xUb+e3XGbVxnllXfDYU+3nXi4sa7O+du755hpNbCHJ5ZgtkQYFKtQ7I+InTY+CDXPYfw==
   dependencies:
     "@react-spring/animated" "~9.7.2"
@@ -1631,12 +1631,12 @@
 
 "@react-spring/rafz@~9.7.2":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/rafz/-/rafz-9.7.2.tgz#77e7088c215e05cf893851cd87ceb40d89f2a7d7"
+  resolved "https://registry.npmjs.org/@react-spring/rafz/-/rafz-9.7.2.tgz"
   integrity sha512-kDWMYDQto3+flkrX3vy6DU/l9pxQ4TVW91DglQEc11iDc7shF4+WVDRJvOVLX+xoMP7zyag1dMvlIgvQ+dvA/A==
 
 "@react-spring/shared@~9.7.2":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/shared/-/shared-9.7.2.tgz#b8485617bdcc9f6348b245922051fb534e07c566"
+  resolved "https://registry.npmjs.org/@react-spring/shared/-/shared-9.7.2.tgz"
   integrity sha512-6U9qkno+9DxlH5nSltnPs+kU6tYKf0bPLURX2te13aGel8YqgcpFYp5Av8DcN2x3sukinAsmzHUS/FRsdZMMBA==
   dependencies:
     "@react-spring/rafz" "~9.7.2"
@@ -1644,7 +1644,7 @@
 
 "@react-spring/three@~9.7.1":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/three/-/three-9.7.2.tgz#2dd23e6e654fc57589cf6f89d6a809bc7f8a96b1"
+  resolved "https://registry.npmjs.org/@react-spring/three/-/three-9.7.2.tgz"
   integrity sha512-u7VAjc+az82PM+WOC2sTbZQLBixuN+0jX/oahzyjEnIds5eUJgaBqZRYAAEMupuzGGl8H3QqL3bFgBEQLq6ADQ==
   dependencies:
     "@react-spring/animated" "~9.7.2"
@@ -1654,12 +1654,12 @@
 
 "@react-spring/types@~9.7.2":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.7.2.tgz#e04dd72755d88b0e3163ba143ecd8ba78b68a5b0"
+  resolved "https://registry.npmjs.org/@react-spring/types/-/types-9.7.2.tgz"
   integrity sha512-GEflx2Ex/TKVMHq5g5MxQDNNPNhqg+4Db9m7+vGTm8ttZiyga7YQUF24shgRNebKIjahqCuei16SZga8h1pe4g==
 
 "@react-spring/web@~9.7.1":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/web/-/web-9.7.2.tgz#76e53dd24033764c3062f9927f88b0f3194688d4"
+  resolved "https://registry.npmjs.org/@react-spring/web/-/web-9.7.2.tgz"
   integrity sha512-7qNc7/5KShu2D05x7o2Ols2nUE7mCKfKLaY2Ix70xPMfTle1sZisoQMBFgV9w/fSLZlHZHV9P0uWJqEXQnbV4Q==
   dependencies:
     "@react-spring/animated" "~9.7.2"
@@ -1669,7 +1669,7 @@
 
 "@react-spring/zdog@~9.7.1":
   version "9.7.2"
-  resolved "https://registry.yarnpkg.com/@react-spring/zdog/-/zdog-9.7.2.tgz#3dcbdb28b6c04d4480a2a68b020802f7ec5c44dd"
+  resolved "https://registry.npmjs.org/@react-spring/zdog/-/zdog-9.7.2.tgz"
   integrity sha512-6z2qqhmbpoZrw1oThyn4zfejtLkuadsaZFVMFf/5l5cHTEdRC8HZsBRLo+Wiomkprg/F1hyhcXI5X1lJ+T/zdQ==
   dependencies:
     "@react-spring/animated" "~9.7.2"
@@ -2098,12 +2098,7 @@
   resolved "https://registry.npmjs.org/@types/mime/-/mime-3.0.1.tgz"
   integrity sha512-Y4XFY5VJAuw0FgAqPNd6NNoV44jbq9Bz2L7Rh/J6jLTiHBSBJa9fxqQIvkIld4GsoDOcCbvzOUAbLPsSKKg+uA==
 
-"@types/node@*":
-  version "18.14.2"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.14.2.tgz"
-  integrity sha512-1uEQxww3DaghA0RxqHx0O0ppVlo43pJhepY51OxuQIKHpjbnYLA7vcdwioNPzIqmC2u3I/dmylcqjlh0e7AyUA==
-
-"@types/node@^16.7.13":
+"@types/node@*", "@types/node@^16.7.13":
   version "16.18.13"
   resolved "https://registry.npmjs.org/@types/node/-/node-16.18.13.tgz"
   integrity sha512-l0/3XZ153UTlNOnZK8xSNoJlQda9/WnYgiTdcKKPJSZjdjI9MU+A9oMXOesAWLSnqAaaJhj3qfQsU07Dr8OUwg==
@@ -3049,6 +3044,11 @@ builtin-modules@^3.1.0:
   resolved "https://registry.npmjs.org/builtin-modules/-/builtin-modules-3.3.0.tgz"
   integrity sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==
 
+bulma@^0.9.4:
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.4.tgz#0ca8aeb1847a34264768dba26a064c8be72674a1"
+  integrity sha512-86FlT5+1GrsgKbPLRRY7cGDg8fsJiP/jzTqXXVqiUZZ2aZT8uemEOHlU1CDU+TxklPEZ11HZNNWclRBBecP4CQ==
+
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz"
@@ -3607,9 +3607,9 @@ cssstyle@^2.3.0:
     cssom "~0.3.6"
 
 csstype@^3.0.2:
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.1.tgz"
-  integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
+  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
@@ -7773,7 +7773,7 @@ react-scripts@5.0.1:
 
 react-spring@^9.0.0-rc.3:
   version "9.7.1"
-  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-9.7.1.tgz#8acfed700823490a4d9d4cf131c5fea12d1aaa93"
+  resolved "https://registry.npmjs.org/react-spring/-/react-spring-9.7.1.tgz"
   integrity sha512-o2+r2DNQDVEuefiz33ZF76DPd/gLq3kbdObJmllGF2IUfv2W6x+ZP0gR97QYCSR4QLbmOl1mPKUBbI+FJdys2Q==
   dependencies:
     "@react-spring/core" "~9.7.1"
@@ -7785,7 +7785,7 @@ react-spring@^9.0.0-rc.3:
 
 react-toggle-dark-mode@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-toggle-dark-mode/-/react-toggle-dark-mode-1.1.1.tgz#ca738d4c7cd613f5091fe08e5c174d091ef5d2f3"
+  resolved "https://registry.npmjs.org/react-toggle-dark-mode/-/react-toggle-dark-mode-1.1.1.tgz"
   integrity sha512-25dH8tvQucpW9c024WQ6gXLxJ6Irc5iTFgAIKuwCUUfbbahyVd1OKEq5TqExzoPHoORIXlQKYXV/+fuyclr6FQ==
   dependencies:
     react-spring "^9.0.0-rc.3"
