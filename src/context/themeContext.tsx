@@ -33,7 +33,6 @@ export default function ThemeProvider({
 
   useEffect(() => {
     const cachedTheme = localStorage.getItem("theme");
-    console.log(cachedTheme);
     if (cachedTheme) {
       setDarkMode(cachedTheme === "dark");
       document.documentElement.className = cachedTheme === "dark" ? "dark" : "";

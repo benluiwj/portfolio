@@ -11,4 +11,35 @@ html.dark {
 	  color: white;
 	}
   }
+
+  .dark {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	div,
+	span,
+	label,
+	a,
+	i {
+	  color: white;
+
+
+	}
+
+	a:hover{
+		
+			color: white;
+			
+		  
+	}
   
+	.is-grey {
+	  color: $dark-mode-secondary-color !important;
+	}
+
+
+  }

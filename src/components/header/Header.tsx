@@ -44,7 +44,7 @@ export function Header(): ReactElement<"div"> {
         <div className="navbar-end">
           {menuItems.map((s: string) => {
             return (
-              <div className="navbar-item">
+              <div className="navbar-item" key={s}>
                 <h3 className="subtitle is-3">{s}</h3>
               </div>
             );
