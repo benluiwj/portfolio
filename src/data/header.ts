@@ -1,7 +1,4 @@
-export const headerName: string = "Benjamin Lui";
-
-export const openMenu: string = "Menu";
-export const closeMenu: string = "Close";
+export const brandName: string = "Ben";
 
 export const menuItems: string[] = [
   "About",

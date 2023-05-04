@@ -7,13 +7,36 @@
 	padding-bottom: 5%;
 	padding-top: 3%;
 
-	.navbar-brand-neighbor {
+	.icon-wrapper {
+		height: 3.25rem;
 		display: flex;
+
 		align-items: center;
-		margin-bottom: 1.5rem;
 		margin-left: auto;
-		
+		flex-wrap: wrap;
+		gap: 1rem;
 	}
+
+	.navbar-burger {
+		margin-left: 0;
+	}
+
+	@media screen and (min-width: 1024px) {
+		.icon-wrapper {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.darkmode-wrapper {
+			display: none;
+		}
+	}
+
+
+
+
+	
 
 
 }

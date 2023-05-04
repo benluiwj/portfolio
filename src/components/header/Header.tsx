@@ -6,12 +6,10 @@ import { Github } from "../../svg/socials/Github";
 import { Icon } from "../icons/Icon";
 
 import { DarkModeToggle } from "../darkModeToggle/DarkModeToggle";
-import Menu from "../menu/Menu";
-import { headerName } from "../../data/header";
+import { brandName, menuItems } from "../../data/header";
 
 export function Header(): ReactElement<"div"> {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const width: boolean = window.matchMedia("(max-width: 1024px)").matches;
 
   const handleNavBar = () => {
     setIsOpen(!isOpen);
@@ -20,9 +18,12 @@ export function Header(): ReactElement<"div"> {
   return (
     <nav className="navbar" aria-label="main navigation">
       <div className="navbar-brand">
-        <h1 className="title is-1">Ben</h1>
-
-        <div className="navbar-brand-neighbor"></div>
+        <h1 className="title is-1">{brandName}</h1>
+        <div className="icon-wrapper">
+          <DarkModeToggle />
+          <Icon icon={<Linkedin />} />
+          <Icon icon={<Github />} />
+        </div>
         <button
           className={isOpen ? "navbar-burger is-active" : "navbar-burger"}
           aria-label="menu"
@@ -35,13 +36,24 @@ export function Header(): ReactElement<"div"> {
           <span aria-hidden="false"></span>
         </button>
       </div>
+
       <div
         className={isOpen ? "navbar-menu is-active" : "navbar-menu"}
         id="navbar"
       >
         <div className="navbar-end">
+          {menuItems.map((s: string) => {
+            return (
+              <div className="navbar-item">
+                <h3 className="subtitle is-3">{s}</h3>
+              </div>
+            );
+          })}
+
           <div className="navbar-item">
-            <h3 className="subtitle is-3">test</h3>
+            <div className="darkmode-wrapper">
+              <DarkModeToggle />
+            </div>
           </div>
         </div>
       </div>
