@@ -1,33 +1,24 @@
 import { ReactElement } from "react";
-import {
-  title,
-  elaboration,
-  experiences,
-  IExperience,
-} from "../../../data/experience";
+import { title, experiences, IExperience } from "../../../data/experience";
 
 import "./Experience.scss";
 
-import { EventInfo, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export function Experience(): ReactElement<"div"> {
   return (
     <div className="experience">
       <section className="section is-medium">
-        <div className="columns pb-6 mb-6">
-          <div className="column is-one-third">
-            <h1 className="title is-1">{title}</h1>
-          </div>
-          <div className="column"></div>
-          <div className="column">
-            <div className="elaboration">{elaboration}</div>
+        <div className="columns pb-6 mb-6 is-centered ">
+          <div className="column  is-one-third ">
+            <h1 className="title is-1 has-text-centered">{title}</h1>
           </div>
         </div>
-        <div className="columns is-variable is-8">
+        <div className="columns is-variable is-8 is-multiline">
           {experiences.map((value: IExperience, index: number) => {
             return (
               <div
-                className="column  is-half-desktop is-half-tablet"
+                className="column  is-one-half-desktop is-one-half-tablet"
                 key={index}
               >
                 <div className="block">
@@ -36,15 +27,15 @@ export function Experience(): ReactElement<"div"> {
                 <div className="block">
                   <motion.a
                     initial={{
-                      borderBottomWidth: "0px",
+                      borderBottomWidth: "4px",
                       borderBottomStyle: "solid",
                       borderBottomColor: "white",
                     }}
                     whileHover={{
-                      borderBottomWidth: "4px",
+                      borderBottomWidth: "0px",
                       borderBottomStyle: "solid",
                       borderBottomColor: "white",
-                      transition: { duration: 0.5, ease: "easeInOut" },
+                      transition: { duration: 0.1, ease: "easeIn" },
                     }}
                     href={value.companySite}
                     className="title is-2"

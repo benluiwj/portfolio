@@ -9,9 +9,6 @@ export type IExperience = {
 
 export const title: string = "Experience";
 
-export const elaboration: string =
-  "These are some of the experiences I have accumulated so far, learning and improving myself through every single one of them!";
-
 export const experiences: IExperience[] = [
   //   {
   //     companyName: "One X Tech",
@@ -37,7 +34,7 @@ export const experiences: IExperience[] = [
     companyName: "National University of Singapore",
     period: "May 2022 - Aug 2022",
     role: "Orbital Advisor",
-    companySite: "",
+    companySite: "https://www.nus.edu.sg/",
     workDone: [
       "Tutored and mentored 10 students for CP2106 Orbital, an independent software development project module.",
       "Conducted weekly zoom meetings to provide a platform for teams to share and learn from another.",

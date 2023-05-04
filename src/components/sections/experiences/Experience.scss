@@ -8,8 +8,6 @@ word-break: keep-all;
 	.elaboration {
 		letter-spacing: 0.1rem;
 		font-weight: 500;
-
-
 	}
 
 	.title.is-2 {
@@ -20,6 +18,11 @@ word-break: keep-all;
 
 	.experience-workdone {
 		margin-bottom: 1.5rem;
+	}
+
+	.icon-wrapper {
+		display: flex;
+
 	}
 
 }
