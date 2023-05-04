@@ -4,13 +4,14 @@
 .introduction {
 	margin: 0 auto;
 	max-width: 80%;
-	padding-top: 2vh;
-	height: 100vh;
+	min-height: 800px;
+	display: flex;
+	align-items: center;
 
-	.columns .column.is-half .title {
+	 .title {
 		color: black;
 	}
-	.columns .column.is-two-third .subtitle{
+	 .subtitle{
 		color: black;
 	}
 }

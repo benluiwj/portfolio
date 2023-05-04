@@ -5,19 +5,21 @@ import { elaboration, introduction } from "../../../data/introduction";
 
 export function Introduction(): ReactElement<"div"> {
   return (
-    <div className="introduction">
-      <div className="columns">
-        <div className="column is-half">
-          <h3 className="title is-3">{introduction}</h3>
+    <div className="introduction ">
+      <section className="section is-large mb-6">
+        <div className="columns">
+          <div className="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop ">
+            <h1 className="title is-1 is-size-1">{introduction}</h1>
+          </div>
+          <div className="column"></div>
         </div>
-        <div className="column"></div>
-      </div>
-      <div className="columns">
-        <div className="column "></div>
-        <div className="column is-two-third">
-          <h5 className="subtitle is-5">{elaboration}</h5>
+        <div className="columns">
+          <div className="column "></div>
+          <div className="column is-two-third">
+            <h3 className="subtitle is-3">{elaboration}</h3>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

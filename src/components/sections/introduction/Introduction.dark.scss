@@ -3,14 +3,19 @@
 
 .dark .introduction {
 	margin: 0 auto;
-	max-width: 80%;
-	padding-top: 2vh;
-	height: 90vh;
+	min-width: 80%;
+	min-height: 850px;
+	display: flex;
+	align-items: center;
 
-	.columns .column.is-half .title {
+
+	
+
+
+	 .title.is-1 {
 		color: white;
 	}
-	.columns .column.is-two-third .subtitle{
+	 .subtitle {
 		color: white;
 	}
 }
