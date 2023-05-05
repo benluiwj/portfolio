@@ -1,6 +1,12 @@
-.project{
+.projects {
 	img {
-		object-fit: fill;
+		object-fit: cover;
 		min-width: 100%;
 	}
+
+	.card {
+		background-color: transparent;
+		height: 100%;
+	}
 }
+

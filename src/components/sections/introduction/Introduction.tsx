@@ -16,7 +16,7 @@ export function Introduction(): ReactElement<"div"> {
         <div className="columns">
           <div className="column "></div>
           <div className="column is-two-third">
-            <h3 className="subtitle is-3">{elaboration}</h3>
+            <h3 className="subtitle is-4">{elaboration}</h3>
           </div>
         </div>
       </section>
