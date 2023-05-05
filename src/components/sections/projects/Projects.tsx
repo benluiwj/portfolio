@@ -1,12 +1,12 @@
 import { ReactElement } from "react";
 import { Project, projects, title } from "../../../data/projects";
 import "./Projects.scss";
-import { motion } from "framer-motion";
-// import { motion } from "framer-motion";
+
+import HoverAttribute from "../../utils/attributeHover";
 
 export default function Projects(): ReactElement<"div"> {
   return (
-    <div className="projects">
+    <div className="projects" id="Projects">
       <section className="section is-medium">
         <div className="columns pb-6 mb-6 is-centered">
           <div className="column  is-one-third ">
@@ -16,7 +16,10 @@ export default function Projects(): ReactElement<"div"> {
         <div className="columns is-multiline">
           {projects.map((project: Project, index: number) => {
             return (
-              <div className="column is-one-half-desktop is-half-tablet is-one-third-widescreen">
+              <div
+                className="column is-one-half-desktop is-half-tablet is-one-third-widescreen"
+                key={index}
+              >
                 <div className="card">
                   <div className="card-image">
                     <figure className="image is-3by2">
@@ -39,65 +42,32 @@ export default function Projects(): ReactElement<"div"> {
                       <div className="columns">
                         <div className="column is-one-third ">
                           {project.links!.Github !== undefined && (
-                            <motion.a
-                              initial={{
-                                borderBottomWidth: "4px",
-                                borderBottomStyle: "solid",
-                                borderBottomColor: "white",
-                              }}
-                              whileHover={{
-                                borderBottomWidth: "0px",
-                                borderBottomStyle: "solid",
-                                borderBottomColor: "white",
-                                transition: { duration: 0.1, ease: "easeIn" },
-                              }}
-                              href={project.links!.Github!}
+                            <HoverAttribute
+                              link={project.links!.Github!}
+                              content="Github"
+                              isThin={false}
                               className="subtitle is-4"
-                            >
-                              Github
-                            </motion.a>
+                            />
                           )}
                         </div>
                         <div className="column is-one-third">
                           {project.links!.Devpost !== undefined && (
-                            <motion.a
-                              initial={{
-                                borderBottomWidth: "4px",
-                                borderBottomStyle: "solid",
-                                borderBottomColor: "white",
-                              }}
-                              whileHover={{
-                                borderBottomWidth: "0px",
-                                borderBottomStyle: "solid",
-                                borderBottomColor: "white",
-                                transition: { duration: 0.1, ease: "easeIn" },
-                              }}
-                              href={project.links!.Devpost!}
+                            <HoverAttribute
+                              link={project.links!.Devpost!}
+                              content="Devpost"
+                              isThin={false}
                               className="subtitle is-4"
-                            >
-                              Devpost
-                            </motion.a>
+                            />
                           )}
                         </div>
                         <div className="column is-one-third">
                           {project.links!.Website !== undefined && (
-                            <motion.a
-                              initial={{
-                                borderBottomWidth: "4px",
-                                borderBottomStyle: "solid",
-                                borderBottomColor: "white",
-                              }}
-                              whileHover={{
-                                borderBottomWidth: "0px",
-                                borderBottomStyle: "solid",
-                                borderBottomColor: "white",
-                                transition: { duration: 0.1, ease: "easeIn" },
-                              }}
-                              href={project.links!.Website!}
+                            <HoverAttribute
+                              link={project.links!.Website!}
+                              content="Website"
+                              isThin={false}
                               className="subtitle is-4"
-                            >
-                              Website
-                            </motion.a>
+                            />
                           )}
                         </div>
                       </div>

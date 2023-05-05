@@ -1,0 +1,48 @@
+.contact {
+
+.line {
+	border-left: 1px solid white;
+	height: 100%;
+
+	width: 1px;
+}
+
+	textarea,
+	input {
+		background-color: transparent;
+		border: none;
+		border-bottom: 4px solid white;
+		
+
+		&:hover {
+			border-bottom: 4px solid white;
+		}
+
+		&:active, &:focus {
+			box-shadow: none;
+			border-bottom: 4px solid white;
+		}
+
+		&:focus {
+			
+			box-shadow: none;
+		}
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		border-bottom: 4px solid white;
+
+		&:hover {
+			border-bottom: 4px solid white;
+		
+		}
+
+		&:focus {
+			
+			border-color: transparent;
+			box-shadow: none;
+		}
+	}
+}

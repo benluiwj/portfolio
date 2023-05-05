@@ -24,11 +24,16 @@ html.dark {
 	span,
 	label,
 	a,
-	i {
+	input, textarea, button {
 	  color: white;
 
 
 	}
+
+	button:hover {
+		color: white
+	}
+
 
 	a:hover{
 		

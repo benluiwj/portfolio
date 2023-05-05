@@ -5,7 +5,7 @@ import { elaboration, introduction } from "../../../data/introduction";
 
 export function Introduction(): ReactElement<"div"> {
   return (
-    <div className="introduction ">
+    <div className="introduction " id="About">
       <section className="section is-large p-0">
         <div className="columns">
           <div className="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop ">
