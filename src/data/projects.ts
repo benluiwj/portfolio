@@ -74,7 +74,7 @@ export const projects: Project[] = [
   {
     name: "Sellah",
     description:
-      "Sellah is an address book containing the contact information and orders related to the clients and partners. ",
+      "An address book that maintains contacts and orders between clients and partners.",
     techStack: [],
     thumbnail: Sellah,
     links: { Github: "https://github.com/AY2122S1-CS2103T-T12-1/tp" },
