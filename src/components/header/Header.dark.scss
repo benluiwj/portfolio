@@ -1,7 +1,7 @@
 @import '../../styles/generic.scss';
 
 .dark .navbar {
-	background-color: transparent;
+
 
 
 
@@ -13,6 +13,10 @@
 		margin-left: auto;
 		flex-wrap: wrap;
 		gap: 1rem;
+	}
+
+	a {
+		border: none;
 	}
 
 	.navbar-burger {

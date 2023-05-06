@@ -1,13 +1,13 @@
 import { ReactElement } from "react";
-import { Project, projects, title } from "../../../data/projects";
+import { Project, projects, title } from "../../data/projects";
 import "./Projects.scss";
 
-import HoverAttribute from "../../utils/attributeHover";
-import SkillIcon from "../../utils/skillIcon";
+import HoverAttribute from "../../components/utils/attributeHover";
+import SkillIcon from "../../components/utils/skillIcon";
 import Tippy, { useSingleton } from "@tippyjs/react";
-import { ISkillIcon } from "../../../data/skills";
+import { ISkillIcon } from "../../data/skills";
 import { motion } from "framer-motion";
-import { headerVariants } from "../../../animations/variants/sectionHeader";
+import { headerVariants } from "../../animations/variants/sectionHeader";
 
 import "tippy.js/animations/shift-away.css";
 

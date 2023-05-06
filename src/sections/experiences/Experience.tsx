@@ -1,25 +1,11 @@
 import { ReactElement } from "react";
-import { title, experiences, IExperience } from "../../../data/experience";
+import { title, experiences, IExperience } from "../../data/experience";
 
 import "./Experience.scss";
 
-import HoverAttribute from "../../utils/attributeHover";
-import { Variants, motion } from "framer-motion";
-
-const headerVariants: Variants = {
-  offscreen: {
-    y: -100,
-    opacity: 0,
-  },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      ease: "easeIn",
-      duration: 0.5,
-    },
-  },
-};
+import HoverAttribute from "../../components/utils/attributeHover";
+import { motion } from "framer-motion";
+import { headerVariants } from "../../animations/variants/sectionHeader";
 
 export function Experience(): ReactElement<"div"> {
   return (

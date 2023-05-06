@@ -1,12 +1,12 @@
 import { ReactElement } from "react";
 import "./Introduction.scss";
 import "./Introduction.dark.scss";
-import { elaboration, introduction } from "../../../data/introduction";
+import { elaboration, introduction } from "../../data/introduction";
 import { motion } from "framer-motion";
 import {
   introductionVariants,
   elaborationVariants,
-} from "../../../animations/variants/introduction";
+} from "../../animations/variants/introduction";
 
 export function Introduction(): ReactElement<"div"> {
   return (
