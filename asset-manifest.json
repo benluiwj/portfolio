@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.eb64bdac.css",
+    "main.css": "/portfolio/static/css/main.90452f0e.css",
     "main.js": "/portfolio/static/js/main.a432b2fa.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Profedex.png": "/portfolio/static/media/Profedex.1ba5bfb253bc7cd1b724.png",
@@ -10,12 +10,12 @@
     "static/media/FoodTheBill.png": "/portfolio/static/media/FoodTheBill.2bfacde1030c3beef506.png",
     "static/media/Clang-slang.png": "/portfolio/static/media/Clang-slang.ef6a7c9ac8059a8247d2.png",
     "index.html": "/portfolio/index.html",
-    "main.eb64bdac.css.map": "/portfolio/static/css/main.eb64bdac.css.map",
+    "main.90452f0e.css.map": "/portfolio/static/css/main.90452f0e.css.map",
     "main.a432b2fa.js.map": "/portfolio/static/js/main.a432b2fa.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb64bdac.css",
+    "static/css/main.90452f0e.css",
     "static/js/main.a432b2fa.js"
   ]
 }
