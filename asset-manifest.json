@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio/static/js/main.1d72a60d.js",
+    "main.css": "/portfolio/static/css/main.c2483575.css",
+    "main.js": "/portfolio/static/js/main.2d4d47ea.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Profedex.png": "/portfolio/static/media/Profedex.1ba5bfb253bc7cd1b724.png",
+    "static/media/Sellah.png": "/portfolio/static/media/Sellah.6cb10b33f7d53d7f1dfa.png",
+    "static/media/Bitcoin.png": "/portfolio/static/media/Bitcoin.6fed9193b28ae08f671c.png",
+    "static/media/NativeSay.png": "/portfolio/static/media/NativeSay.aa55171592d7fbd51fdd.png",
+    "static/media/FoodTheBill.png": "/portfolio/static/media/FoodTheBill.2bfacde1030c3beef506.png",
+    "static/media/Clang-slang.png": "/portfolio/static/media/Clang-slang.ef6a7c9ac8059a8247d2.png",
     "index.html": "/portfolio/index.html",
-    "main.073c9b0a.css.map": "/portfolio/static/css/main.073c9b0a.css.map",
-    "main.1d72a60d.js.map": "/portfolio/static/js/main.1d72a60d.js.map",
+    "main.c2483575.css.map": "/portfolio/static/css/main.c2483575.css.map",
+    "main.2d4d47ea.js.map": "/portfolio/static/js/main.2d4d47ea.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.1d72a60d.js"
+    "static/css/main.c2483575.css",
+    "static/js/main.2d4d47ea.js"
   ]
 }
