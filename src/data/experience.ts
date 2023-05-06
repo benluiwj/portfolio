@@ -10,13 +10,6 @@ export type IExperience = {
 export const title: string = "Experience";
 
 export const experiences: IExperience[] = [
-  //   {
-  //     companyName: "One X Tech",
-  //     period: "May 2023 - Aug 2023",
-  //     role: "Incoming Software Engineer",
-  //     workDone: [],
-  //     techStack: [],
-  //   },
   {
     companyName: "Cargo Community Network",
     period: "May 2022 - Aug 2022",
