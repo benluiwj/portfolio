@@ -20,7 +20,7 @@ export function Introduction(): ReactElement<"div"> {
         >
           <div className="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop pb-6 mb-6">
             <motion.h1
-              className="title is-1 is-size-1"
+              className="title is-1 is-size-1 is-size-2-mobile"
               variants={introductionVariants}
             >
               {introduction}
