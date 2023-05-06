@@ -16,9 +16,9 @@ export const Flutter = (): ReactElement<void, "svg"> => (
       y2="99.399"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stop-color="#1b4e94" />
-      <stop offset=".63" stop-color="#1a5497" />
-      <stop offset="1" stop-color="#195a9b" />
+      <stop offset="0" stopColor="#1b4e94" />
+      <stop offset=".63" stopColor="#1a5497" />
+      <stop offset="1" stopColor="#195a9b" />
     </linearGradient>
     <path fill="url(#deviconFlutter0)" d="m61.6 113.1l30.8-8.4l-10.8-10.8z" />
   </svg>
