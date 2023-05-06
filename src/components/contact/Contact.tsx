@@ -36,8 +36,20 @@ export default function Contact(): ReactElement<"div"> {
               </h4>
             </div>
             <div className="block is-flex is-justify-content-space-evenly">
-              <Icon icon={<Github />} />
-              <Icon icon={<Linkedin />} />
+              <Icon
+                icon={
+                  <a href="https://github.com/benluiwj">
+                    <Github />
+                  </a>
+                }
+              />
+              <Icon
+                icon={
+                  <a href="https://www.linkedin.com/in/benjaminluiwj/">
+                    <Linkedin />
+                  </a>
+                }
+              />
             </div>
           </div>
           <div className="column is-narrow">
