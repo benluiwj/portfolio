@@ -3,10 +3,11 @@ import "./Header.scss";
 import "./Header.dark.scss";
 import { Linkedin } from "../../svg/socials/Linkedin";
 import { Github } from "../../svg/socials/Github";
-import { Icon } from "../icons/Icon";
+import { SocialIcon } from "../socialIcons/SocialIcon";
 
 import { DarkModeToggle } from "../darkModeToggle/DarkModeToggle";
 import { brandName, menuItems } from "../../data/header";
+import { GithubURL, LinkedinURL } from "../../data/socials";
 
 export function Header(): ReactElement<"div"> {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -21,8 +22,8 @@ export function Header(): ReactElement<"div"> {
         <h1 className="title is-1">{brandName}</h1>
         <div className="icon-wrapper">
           <DarkModeToggle />
-          <Icon icon={<Linkedin />} />
-          <Icon icon={<Github />} />
+          <SocialIcon icon={<Linkedin />} href={LinkedinURL} />
+          <SocialIcon icon={<Github />} href={GithubURL} />
         </div>
         <button
           className={isOpen ? "navbar-burger is-active" : "navbar-burger"}

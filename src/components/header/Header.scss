@@ -9,6 +9,12 @@
 	padding-bottom: 5%;
 	padding-top: 3%;
 
+	.navbar-menu.is-active {
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+
 	.icon-wrapper {
 		height: 3.25rem;
 		display: flex;
@@ -21,6 +27,10 @@
 
 	.navbar-burger {
 		margin-left: 0;
+
+		&:hover {
+			background-color: transparent;
+		}
 	}
 
 	@media screen and (min-width: 1024px) {

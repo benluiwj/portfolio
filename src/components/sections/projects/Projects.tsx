@@ -6,6 +6,8 @@ import HoverAttribute from "../../utils/attributeHover";
 import SkillIcon from "../../utils/skillIcon";
 import Tippy, { useSingleton } from "@tippyjs/react";
 import { ISkillIcon } from "../../../data/skills";
+import { motion } from "framer-motion";
+import { headerVariants } from "../../../animations/variants/sectionHeader";
 
 export default function Projects(): ReactElement<"div"> {
   const [source, target] = useSingleton({
@@ -15,11 +17,21 @@ export default function Projects(): ReactElement<"div"> {
     <div className="projects" id="Projects">
       <section className="hero is-fullheight">
         <section className="section is-medium">
-          <div className="columns pb-6 mb-6 is-centered">
+          <motion.div
+            className="columns pb-6 mb-6 is-centered"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+          >
             <div className="column  is-one-third ">
-              <h1 className="title is-1 has-text-centered">{title}</h1>
+              <motion.h1
+                className="title is-1 has-text-centered"
+                variants={headerVariants}
+              >
+                {title}
+              </motion.h1>
             </div>
-          </div>
+          </motion.div>
           <div className="columns is-multiline">
             {projects.map((project: Project, index: number) => {
               return (
