@@ -3,7 +3,6 @@ import { title, experiences, IExperience } from "../../../data/experience";
 
 import "./Experience.scss";
 
-import { motion } from "framer-motion";
 import HoverAttribute from "../../utils/attributeHover";
 
 export function Experience(): ReactElement<"div"> {

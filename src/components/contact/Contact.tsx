@@ -43,11 +43,11 @@ export default function Contact(): ReactElement<"div"> {
           <div className="column is-narrow">
             <div className="line" />
           </div>
-          <div className="column  ">
-            <div className="columns is-multiline">
+          <div className="column  is-flex ">
+            <div className="columns is-multiline is-variable is-8">
               {MenuItems.map((menuItem: string, index: number) => (
-                <div className="column is-half" key={index}>
-                  <h4 className="subtitle is-4 has-text-centered">
+                <div className="column is-half " key={index}>
+                  <h4 className="subtitle is-4 has-text-centered ">
                     <HoverAttribute
                       link={"#" + menuItem}
                       content={menuItem}
