@@ -1,0 +1,29 @@
+.skill-icon {
+	align-items: center;
+	display: flex;
+	height: 40px;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	width: 40px;
+	z-index: 0;
+
+	.icon-text {
+		justify-content: center;
+		.icon {
+			height: 100%;
+			width: 100%;
+		}
+
+	}
+  
+	svg {
+	  height: 40px;
+	  max-height: 40px;
+	  max-width: 40px;
+	  width: 40px;
+	}
+
+
+	
+  }
+  

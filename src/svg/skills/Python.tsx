@@ -1,12 +1,7 @@
 import { ReactElement } from "react";
 
 export const Python = (): ReactElement<void, "svg"> => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="256"
-    height="255"
-    viewBox="0 0 256 255"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 255">
     <defs>
       <linearGradient
         id="logosPython0"

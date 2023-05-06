@@ -1,12 +1,7 @@
 import { ReactElement } from "react";
 
 export const Dart = (): ReactElement<void, "svg"> => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="128"
-    height="128"
-    viewBox="0 0 128 128"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
     <path
       fill="#00c4b3"
       d="m35.2 34.9l-8.3-8.3v59.7l.1 2.8c0 1.3.2 2.8.7 4.3l65.6 23.1l16.3-7.2l-74.4-74.4z"

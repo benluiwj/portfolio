@@ -1,10 +1,15 @@
 import { ReactElement } from "react";
-import { Project, projects, title } from "../../../data/projects";
+import { ISkillIcon, Project, projects, title } from "../../../data/projects";
 import "./Projects.scss";
 
 import HoverAttribute from "../../utils/attributeHover";
+import SkillIcon from "../../utils/skillIcon";
+import Tippy, { useSingleton } from "@tippyjs/react";
 
 export default function Projects(): ReactElement<"div"> {
+  const [source, target] = useSingleton({
+    overrides: ["placement"],
+  });
   return (
     <div className="projects" id="Projects">
       <section className="section is-medium">
@@ -35,7 +40,22 @@ export default function Projects(): ReactElement<"div"> {
                       {"0" + (index + 1) + ". " + project.name}
                     </p>
                     <p className="subtitle is-5">{project.description}</p>
-                    <div className="project-techstack">{project.techStack}</div>
+                    <div className="skill-icon-list">
+                      <Tippy
+                        singleton={source}
+                        delay={500}
+                        moveTransition="transform 0.8s cubic-bezier(0.22, 1, 0.36, 1)"
+                      />
+                      {project.techStack.map((skillIcon: ISkillIcon) => {
+                        return (
+                          <SkillIcon
+                            icon={skillIcon.icon}
+                            iconName={skillIcon.iconName}
+                            singleton={target}
+                          />
+                        );
+                      })}
+                    </div>
                     {project.links === undefined ? (
                       <p>Sorry, I have nothing to show for this project...</p>
                     ) : (

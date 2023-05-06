@@ -4,11 +4,14 @@ import Clang from "../img/Clang-slang.png";
 import Profedex from "../img/Profedex.png";
 import Sellah from "../img/Sellah.png";
 import FoodTheBill from "../img/FoodTheBill.png";
+import { ReactElement } from "react";
+import { Antlr } from "../svg/skills/Antlr";
+import { Typescript } from "../svg/skills/Typescript";
 
 export type Project = {
   name: string;
   description: string;
-  techStack: string[];
+  techStack: ISkillIcon[];
   thumbnail: string;
   links: Links | undefined;
 };
@@ -17,6 +20,11 @@ export type Links = {
   Github?: string;
   Devpost?: string;
   Website?: string;
+};
+
+export type ISkillIcon = {
+  icon: ReactElement<void, "svg">;
+  iconName: string;
 };
 
 export const title: string = "Projects";
@@ -37,7 +45,10 @@ export const projects: Project[] = [
     name: "Clang-slang",
     description:
       "A sublanguage of C that supports the core features of C such as pointer and array arithmetic and type safety.",
-    techStack: [],
+    techStack: [
+      { icon: Antlr(), iconName: "Antlr" },
+      { icon: Typescript(), iconName: "Typescript" },
+    ],
     thumbnail: Clang,
     links: {
       Github: "https://github.com/cs4215-2023/c-interpreter",

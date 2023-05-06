@@ -1,12 +1,7 @@
 import { ReactElement } from "react";
 
 export const Firebase = (): ReactElement<void, "svg"> => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="256"
-    height="351"
-    viewBox="0 0 256 351"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 351">
     <defs>
       <filter
         id="logosFirebase0"
