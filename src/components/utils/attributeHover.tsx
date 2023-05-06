@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ReactElement, useEffect } from "react";
-import { useThemeContext } from "../../context/themeContext";
+import { ReactElement } from "react";
 
 export type Props = {
   link: string;
