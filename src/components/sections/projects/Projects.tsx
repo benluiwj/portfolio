@@ -1,10 +1,11 @@
 import { ReactElement } from "react";
-import { ISkillIcon, Project, projects, title } from "../../../data/projects";
+import { Project, projects, title } from "../../../data/projects";
 import "./Projects.scss";
 
 import HoverAttribute from "../../utils/attributeHover";
 import SkillIcon from "../../utils/skillIcon";
 import Tippy, { useSingleton } from "@tippyjs/react";
+import { ISkillIcon } from "../../../data/skills";
 
 export default function Projects(): ReactElement<"div"> {
   const [source, target] = useSingleton({
