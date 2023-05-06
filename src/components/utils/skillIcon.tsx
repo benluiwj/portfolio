@@ -3,8 +3,6 @@ import "../../styles/SkillIcon.scss";
 
 import { TippyProps } from "@tippyjs/react";
 
-import "tippy.js/animations/shift-away.css";
-
 import Tippy from "@tippyjs/react";
 
 export interface Props extends TippyProps {
@@ -14,19 +12,12 @@ export interface Props extends TippyProps {
 
 export default function SkillIcon({ icon, iconName, singleton }: Props) {
   return (
-    <>
-      <Tippy
-        placement="bottom"
-        singleton={singleton}
-        animation="shift-away"
-        content={iconName}
-      >
-        <div className="skill-icon">
-          <div className="icon-text">
-            <span className="icon has-text-info">{icon}</span>
-          </div>
+    <Tippy placement="bottom" singleton={singleton} content={iconName}>
+      <div className="skill-icon">
+        <div className="icon-text">
+          <span className="icon has-text-info">{icon}</span>
         </div>
-      </Tippy>
-    </>
+      </div>
+    </Tippy>
   );
 }

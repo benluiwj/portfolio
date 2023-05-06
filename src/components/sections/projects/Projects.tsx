@@ -9,6 +9,8 @@ import { ISkillIcon } from "../../../data/skills";
 import { motion } from "framer-motion";
 import { headerVariants } from "../../../animations/variants/sectionHeader";
 
+import "tippy.js/animations/shift-away.css";
+
 export default function Projects(): ReactElement<"div"> {
   const [source, target] = useSingleton({
     overrides: ["placement"],
@@ -57,8 +59,9 @@ export default function Projects(): ReactElement<"div"> {
                       <div className="skill-icon-list">
                         <Tippy
                           singleton={source}
-                          delay={500}
+                          delay={50}
                           moveTransition="transform 0.8s cubic-bezier(0.22, 1, 0.36, 1)"
+                          animation="shift-away"
                         />
                         {project.techStack.map((skillIcon: ISkillIcon) => {
                           return (
