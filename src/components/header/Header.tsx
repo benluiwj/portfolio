@@ -45,7 +45,24 @@ export function Header(): ReactElement<"div"> {
           {menuItems.map((s: string) => {
             return (
               <div className="navbar-item" key={s}>
-                <h3 className="subtitle is-3">{s}</h3>
+                <a
+                  className="subtitle is-3"
+                  href={"#" + s}
+                  onClick={(
+                    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+                  ) => {
+                    let targetSection = document.getElementById(s);
+                    e.preventDefault();
+
+                    targetSection &&
+                      targetSection.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      });
+                  }}
+                >
+                  {s}
+                </a>
               </div>
             );
           })}
@@ -58,16 +75,5 @@ export function Header(): ReactElement<"div"> {
         </div>
       </div>
     </nav>
-    // <div className="header">
-    //   <div className="header-socials">
-    //     <Icon icon={<Linkedin />} />
-    //     <Icon icon={<Github />} />
-    //     <DarkModeToggle />
-    //   </div>
-    //   <div className="header-name">
-    //     <h1 className="title is-1">{headerName}</h1>
-    //   </div>
-    //   <Menu />
-    // </div>
   );
 }

@@ -6,6 +6,7 @@ export type Props = {
   content: string;
   isThin: boolean;
   className: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 };
 
 export default function HoverAttribute({
@@ -13,7 +14,9 @@ export default function HoverAttribute({
   content,
   isThin,
   className,
+  onClick,
 }: Props): ReactElement<"a"> {
+  console.log(link);
   return (
     <motion.a
       initial={{
@@ -29,6 +32,7 @@ export default function HoverAttribute({
       }}
       href={link}
       className={className}
+      onClick={onClick}
     >
       {content}
     </motion.a>
