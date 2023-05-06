@@ -6,8 +6,14 @@ import "./Experience.scss";
 import HoverAttribute from "../../components/utils/attributeHover";
 import { motion } from "framer-motion";
 import { headerVariants } from "../../animations/variants/sectionHeader";
+import Tippy, { useSingleton } from "@tippyjs/react";
+import { ISkillIcon } from "../../data/skills";
+import SkillIcon from "../../components/utils/skillIcon";
 
 export function Experience(): ReactElement<"div"> {
+  const [source, target] = useSingleton({
+    overrides: ["placement"],
+  });
   return (
     <div className="experience" id="Experience">
       <section className="hero is-fullheight">
@@ -59,6 +65,24 @@ export function Experience(): ReactElement<"div"> {
                         </div>
                       ))}
                     </h4>
+                  </div>
+                  <div className="skill-icon-list">
+                    <Tippy
+                      singleton={source}
+                      delay={50}
+                      moveTransition="transform 0.8s cubic-bezier(0.22, 1, 0.36, 1)"
+                      animation="shift-away"
+                    />
+                    {value.techStack.map((skillIcon: ISkillIcon) => {
+                      return (
+                        <SkillIcon
+                          icon={skillIcon.icon}
+                          iconName={skillIcon.iconName}
+                          singleton={target}
+                          key={skillIcon.iconName}
+                        />
+                      );
+                    })}
                   </div>
                 </div>
               );

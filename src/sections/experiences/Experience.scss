@@ -25,4 +25,11 @@ word-break: keep-all;
 
 	}
 
+	.skill-icon-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		padding-bottom: 1rem;
+	}
+
 }

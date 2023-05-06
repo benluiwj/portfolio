@@ -9,6 +9,10 @@ import { Flutter } from "../svg/skills/Flutter";
 import { Dart } from "../svg/skills/Dart";
 import { Firebase } from "../svg/skills/Firebase";
 import { Java } from "../svg/skills/Java";
+import { NextJs } from "../svg/skills/NextJs";
+import { Javascript } from "../svg/skills/Javascript";
+import { CSharp } from "../svg/skills/CSharp";
+import { React } from "../svg/skills/React";
 
 export type ISkillIcon = {
   icon: ReactElement<void, "svg">;
@@ -41,3 +45,20 @@ export const FirebaseSkill: ISkillIcon = {
 };
 
 export const JavaSkill: ISkillIcon = { icon: Java(), iconName: "Java" };
+
+export const NextJsSkill: ISkillIcon = { icon: NextJs(), iconName: "Nextjs" };
+
+export const JavascriptSkill: ISkillIcon = {
+  icon: Javascript(),
+  iconName: "Javascript",
+};
+
+export const CSharpSkill: ISkillIcon = {
+  icon: CSharp(),
+  iconName: "C#",
+};
+
+export const ReactSkill: ISkillIcon = {
+  icon: React(),
+  iconName: "React",
+};

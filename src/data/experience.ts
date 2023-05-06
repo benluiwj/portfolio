@@ -1,10 +1,21 @@
+import {
+  CSharpSkill,
+  DartSkill,
+  FirebaseSkill,
+  FlutterSkill,
+  ISkillIcon,
+  JavascriptSkill,
+  PythonSkill,
+  ReactSkill,
+} from "./skills";
+
 export type IExperience = {
   companyName: string;
   period: string;
   role: string;
   companySite: string;
   workDone: string[];
-  techStack: string[];
+  techStack: ISkillIcon[];
 };
 
 export const title: string = "Experience";
@@ -21,7 +32,7 @@ export const experiences: IExperience[] = [
       "Designed and implemented a dynamic link library which processed and handled API consumption.",
       "Documented the work done by including UML diagrams, design decisions to facilitate smooth handing over of projects to other coworkers",
     ],
-    techStack: [],
+    techStack: [JavascriptSkill, CSharpSkill],
   },
   {
     companyName: "National University of Singapore",
@@ -32,6 +43,12 @@ export const experiences: IExperience[] = [
       "Tutored and mentored 10 students for CP2106 Orbital, an independent software development project module.",
       "Conducted weekly zoom meetings to provide a platform for teams to share and learn from another.",
     ],
-    techStack: [],
+    techStack: [
+      PythonSkill,
+      FlutterSkill,
+      FirebaseSkill,
+      DartSkill,
+      ReactSkill,
+    ],
   },
 ];

@@ -15,6 +15,8 @@ import {
   FirebaseSkill,
   DartSkill,
   JavaSkill,
+  NextJsSkill,
+  ReactSkill,
 } from "./skills";
 import { ISkillIcon } from "./skills";
 
@@ -39,7 +41,7 @@ export const projects: Project[] = [
     name: "NativeSay",
     description:
       "NativeSay is a translation app that helps users understand the context in which translations should be used, and provides culturally and contextually aware translations based on the specified context. Won Top 8 in Hack&Roll 2023.",
-    techStack: [MUISkill, TypescriptSkill],
+    techStack: [MUISkill, TypescriptSkill, NextJsSkill, ReactSkill],
     thumbnail: NativeSay,
     links: {
       Devpost: "https://devpost.com/software/nativesay",
