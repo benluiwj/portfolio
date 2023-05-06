@@ -18,7 +18,7 @@ export function Introduction(): ReactElement<"div"> {
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
         >
-          <div className="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop ">
+          <div className="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop pb-6 mb-6">
             <motion.h1
               className="title is-1 is-size-1"
               variants={introductionVariants}
