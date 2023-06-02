@@ -1,9 +1,9 @@
-import NativeSay from "../img/NativeSay.png";
-import Bitcoin from "../img/Bitcoin.png";
-import Clang from "../img/Clang-slang.png";
-import Profedex from "../img/Profedex.png";
-import Sellah from "../img/Sellah.png";
-import FoodTheBill from "../img/FoodTheBill.png";
+import NativeSay from "../img/NativeSay.png"
+import Bitcoin from "../img/Bitcoin.png"
+import Clang from "../img/Clang-slang.png"
+import Profedex from "../img/Profedex.png"
+import Sellah from "../img/Sellah.png"
+import FoodTheBill from "../img/FoodTheBill.png"
 
 import {
   AntlrSkill,
@@ -17,24 +17,25 @@ import {
   JavaSkill,
   NextJsSkill,
   ReactSkill,
-} from "./skills";
-import { ISkillIcon } from "./skills";
+} from "./skills"
+import { ISkillIcon } from "./skills"
 
 export type Project = {
-  name: string;
-  description: string;
-  techStack: ISkillIcon[];
-  thumbnail: string;
-  links: Links | undefined;
-};
+  name: string
+  description: string
+  techStack: ISkillIcon[]
+  thumbnail: string
+  links: Links
+}
 
 export type Links = {
-  Github?: string;
-  Devpost?: string;
-  Website?: string;
-};
+  github?: string
+  devpost?: string
+  website?: string
+  total: number
+}
 
-export const title: string = "Projects";
+export const title: string = "Projects"
 
 export const projects: Project[] = [
   {
@@ -44,8 +45,9 @@ export const projects: Project[] = [
     techStack: [MUISkill, TypescriptSkill, NextJsSkill, ReactSkill],
     thumbnail: NativeSay,
     links: {
-      Devpost: "https://devpost.com/software/nativesay",
-      Website: "https://www.nativesay.com/",
+      devpost: "https://devpost.com/software/nativesay",
+      website: "https://www.nativesay.com/",
+      total: 2,
     },
   },
   {
@@ -55,8 +57,9 @@ export const projects: Project[] = [
     techStack: [AntlrSkill, TypescriptSkill],
     thumbnail: Clang,
     links: {
-      Github: "https://github.com/cs4215-2023/c-interpreter",
-      Website: "https://cs4215-2023.github.io/CS4215-frontend/",
+      github: "https://github.com/cs4215-2023/c-interpreter",
+      website: "https://cs4215-2023.github.io/CS4215-frontend/",
+      total: 2,
     },
   },
   {
@@ -65,7 +68,7 @@ export const projects: Project[] = [
       "A command line interface application that demonstrates cryptocurrency mining and exchange. This was built in a team of four.",
     techStack: [RustSkill],
     thumbnail: Bitcoin,
-    links: undefined,
+    links: { total: 0 },
   },
   {
     name: "Profedex",
@@ -74,8 +77,9 @@ export const projects: Project[] = [
     techStack: [PythonSkill],
     thumbnail: Profedex,
     links: {
-      Devpost: "https://devpost.com/software/profedex",
-      Github: "https://github.com/benluiwj/Prof-dex",
+      devpost: "https://devpost.com/software/profedex",
+      github: "https://github.com/benluiwj/Prof-dex",
+      total: 2,
     },
   },
   {
@@ -84,7 +88,7 @@ export const projects: Project[] = [
       "A mobile application that provides food choices for users to alleviate pre-meal stress",
     techStack: [FlutterSkill, DartSkill, FirebaseSkill],
     thumbnail: FoodTheBill,
-    links: { Github: "https://github.com/benluiwj/FoodTheBill" },
+    links: { github: "https://github.com/benluiwj/FoodTheBill", total: 1 },
   },
   {
     name: "Sellah",
@@ -92,6 +96,6 @@ export const projects: Project[] = [
       "An address book that maintains contacts and orders between clients and partners.",
     techStack: [JavaSkill],
     thumbnail: Sellah,
-    links: { Github: "https://github.com/AY2122S1-CS2103T-T12-1/tp" },
+    links: { github: "https://github.com/AY2122S1-CS2103T-T12-1/tp", total: 1 },
   },
-];
+]

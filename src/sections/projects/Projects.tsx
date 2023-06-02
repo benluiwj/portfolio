@@ -2,13 +2,13 @@ import { ReactElement } from "react"
 import { Project, projects, title } from "../../data/projects"
 import "./Projects.scss"
 
-import HoverAttribute from "../../components/utils/attributeHover"
-import SkillIcon from "../../components/utils/skillIcon"
 import Tippy, { useSingleton } from "@tippyjs/react"
-import { ISkillIcon } from "../../data/skills"
+
 import SectionTitle from "../../components/section/sectionTitle"
 
 import "tippy.js/animations/shift-away.css"
+import { generateSVGFromTechStack } from "../../utils"
+import { projectLinks } from "../../components/section/projectLinks"
 
 export default function Projects(): ReactElement<"div"> {
   const [source, target] = useSingleton({
@@ -48,53 +48,9 @@ export default function Projects(): ReactElement<"div"> {
                           moveTransition="transform 0.8s cubic-bezier(0.22, 1, 0.36, 1)"
                           animation="shift-away"
                         />
-                        {project.techStack.map((skillIcon: ISkillIcon) => {
-                          return (
-                            <SkillIcon
-                              icon={skillIcon.icon}
-                              iconName={skillIcon.iconName}
-                              singleton={target}
-                              key={skillIcon.iconName}
-                            />
-                          )
-                        })}
+                        {generateSVGFromTechStack(project.techStack, target)}
                       </div>
-                      {project.links === undefined ? (
-                        <p>Sorry, I have nothing to show for this project...</p>
-                      ) : (
-                        <div className="columns">
-                          <div className="column is-one-third ">
-                            {project.links!.Github !== undefined && (
-                              <HoverAttribute
-                                link={project.links!.Github!}
-                                content="Github"
-                                isThin={false}
-                                className="subtitle is-4"
-                              />
-                            )}
-                          </div>
-                          <div className="column is-one-third">
-                            {project.links!.Devpost !== undefined && (
-                              <HoverAttribute
-                                link={project.links!.Devpost!}
-                                content="Devpost"
-                                isThin={false}
-                                className="subtitle is-4"
-                              />
-                            )}
-                          </div>
-                          <div className="column is-one-third">
-                            {project.links!.Website !== undefined && (
-                              <HoverAttribute
-                                link={project.links!.Website!}
-                                content="Website"
-                                isThin={false}
-                                className="subtitle is-4"
-                              />
-                            )}
-                          </div>
-                        </div>
-                      )}
+                      {projectLinks(project.links)}
                     </div>
                   </div>
                 </div>
