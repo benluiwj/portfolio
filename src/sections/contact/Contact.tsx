@@ -1,17 +1,17 @@
-import { ReactElement } from "react";
+import { ReactElement } from "react"
 
-import "./Contact.scss";
-import { SocialIcon } from "../../components/socialIcons/SocialIcon";
-import { Github } from "../../svg/socials/Github";
-import { Linkedin } from "../../svg/socials/Linkedin";
-import HoverAttribute from "../../components/utils/attributeHover";
-import { ContactHeader, GetInTouch, FareWell } from "../../data/contact";
-import { menuItems } from "../../data/header";
+import "./Contact.scss"
+import { SocialIcon } from "../../components/socialIcons/SocialIcon"
+import { Github } from "../../svg/socials/Github"
+import { Linkedin } from "../../svg/socials/Linkedin"
+import HoverAttribute from "../../components/utils/attributeHover"
+import { ContactHeader, GetInTouch, FareWell } from "../../data/contact"
 
-import { motion } from "framer-motion";
-import { headerVariants } from "../../animations/variants/sectionHeader";
-import { verticalLineVariants } from "../../animations/variants/verticalLine";
-import { GithubURL, LinkedinURL } from "../../data/socials";
+import { motion } from "framer-motion"
+import { headerVariants } from "../../animations/variants/sectionHeader"
+import { verticalLineVariants } from "../../animations/variants/verticalLine"
+import { GithubURL, LinkedinURL } from "../../data/socials"
+import Footer from "../../components/footer/Footer"
 
 export default function Contact(): ReactElement<"div"> {
   return (
@@ -60,37 +60,10 @@ export default function Contact(): ReactElement<"div"> {
             >
               <motion.div className="line" variants={verticalLineVariants} />
             </motion.div>
-            <div className="column  ">
-              <div className="columns is-multiline is-variable is-8 is-align-items-center">
-                {menuItems.map((menuItem: string) => (
-                  <div className="column is-half is-full-mobile" key={menuItem}>
-                    <h4 className="subtitle is-4 has-text-centered ">
-                      <HoverAttribute
-                        link={"#" + menuItem}
-                        content={menuItem}
-                        isThin={true}
-                        className=""
-                        onClick={(
-                          e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-                        ) => {
-                          let targetSection = document.getElementById(menuItem);
-                          e.preventDefault();
-
-                          targetSection &&
-                            targetSection.scrollIntoView({
-                              behavior: "smooth",
-                              block: "start",
-                            });
-                        }}
-                      />
-                    </h4>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <Footer />
           </motion.div>
         </section>
       </section>
     </div>
-  );
+  )
 }
