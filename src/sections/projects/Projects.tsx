@@ -1,39 +1,24 @@
-import { ReactElement } from "react";
-import { Project, projects, title } from "../../data/projects";
-import "./Projects.scss";
+import { ReactElement } from "react"
+import { Project, projects, title } from "../../data/projects"
+import "./Projects.scss"
 
-import HoverAttribute from "../../components/utils/attributeHover";
-import SkillIcon from "../../components/utils/skillIcon";
-import Tippy, { useSingleton } from "@tippyjs/react";
-import { ISkillIcon } from "../../data/skills";
-import { motion } from "framer-motion";
-import { headerVariants } from "../../animations/variants/sectionHeader";
+import HoverAttribute from "../../components/utils/attributeHover"
+import SkillIcon from "../../components/utils/skillIcon"
+import Tippy, { useSingleton } from "@tippyjs/react"
+import { ISkillIcon } from "../../data/skills"
+import SectionTitle from "../../components/section/sectionTitle"
 
-import "tippy.js/animations/shift-away.css";
+import "tippy.js/animations/shift-away.css"
 
 export default function Projects(): ReactElement<"div"> {
   const [source, target] = useSingleton({
     overrides: ["placement"],
-  });
+  })
   return (
     <div className="projects" id="Projects">
       <section className="hero is-fullheight">
         <section className="section is-medium">
-          <motion.div
-            className="columns pb-6 mb-6 is-centered"
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
-          >
-            <div className="column  is-one-third ">
-              <motion.h1
-                className="title is-1 has-text-centered"
-                variants={headerVariants}
-              >
-                {title}
-              </motion.h1>
-            </div>
-          </motion.div>
+          <SectionTitle title={title} />
           <div className="columns is-multiline">
             {projects.map((project: Project, index: number) => {
               return (
@@ -71,7 +56,7 @@ export default function Projects(): ReactElement<"div"> {
                               singleton={target}
                               key={skillIcon.iconName}
                             />
-                          );
+                          )
                         })}
                       </div>
                       {project.links === undefined ? (
@@ -113,11 +98,11 @@ export default function Projects(): ReactElement<"div"> {
                     </div>
                   </div>
                 </div>
-              );
+              )
             })}
           </div>
         </section>
       </section>
     </div>
-  );
+  )
 }

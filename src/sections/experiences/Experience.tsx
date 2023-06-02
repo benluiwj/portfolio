@@ -1,38 +1,25 @@
-import { ReactElement } from "react";
-import { title, experiences, IExperience } from "../../data/experience";
+import { ReactElement } from "react"
+import { title, experiences, IExperience } from "../../data/experience"
 
-import "./Experience.scss";
+import "./Experience.scss"
 
-import HoverAttribute from "../../components/utils/attributeHover";
-import { motion } from "framer-motion";
-import { headerVariants } from "../../animations/variants/sectionHeader";
-import Tippy, { useSingleton } from "@tippyjs/react";
-import { ISkillIcon } from "../../data/skills";
-import SkillIcon from "../../components/utils/skillIcon";
+import HoverAttribute from "../../components/utils/attributeHover"
+
+import Tippy, { useSingleton } from "@tippyjs/react"
+import { ISkillIcon } from "../../data/skills"
+import SkillIcon from "../../components/utils/skillIcon"
+import SectionTitle from "../../components/section/sectionTitle"
 
 export function Experience(): ReactElement<"div"> {
   const [source, target] = useSingleton({
     overrides: ["placement"],
-  });
+  })
   return (
     <div className="experience" id="Experience">
       <section className="hero is-fullheight">
         <section className="section is-medium">
-          <motion.div
-            className="columns pb-6 mb-6 is-centered "
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
-          >
-            <div className="column  is-one-third ">
-              <motion.h1
-                className="title is-1 has-text-centered"
-                variants={headerVariants}
-              >
-                {title}
-              </motion.h1>
-            </div>
-          </motion.div>
+          <SectionTitle title={title} />
+
           <div className="columns is-variable is-8 is-multiline">
             {experiences.map((value: IExperience, index: number) => {
               return (
@@ -81,15 +68,15 @@ export function Experience(): ReactElement<"div"> {
                           singleton={target}
                           key={skillIcon.iconName}
                         />
-                      );
+                      )
                     })}
                   </div>
                 </div>
-              );
+              )
             })}
           </div>
         </section>
       </section>
     </div>
-  );
+  )
 }
