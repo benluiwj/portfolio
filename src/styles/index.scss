@@ -1,34 +1,33 @@
-@import './generic.scss';
+@import "./generic.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+$lato: "Lato", sans-serif;
 
 html {
-	background-color: white;
-  }
-  
-  body {
-	color: black;
-	font-family: Montserrat, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-weight: 600;
-	letter-spacing: -0.75px;
-	margin: 0;
+  background-color: white;
+}
 
-	background-color: #FFE2E2;
-  
-	> div {
-	  background-color: transparent;
-	}
+body {
+  color: black;
+  font-family: $lato;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
+  letter-spacing: -0.75px;
+  margin: 0;
 
-	a {
-		color: black;
-		border-bottom-color: black;
-		border-bottom-style: solid;
-	}
-  }
-  
-  code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-	  monospace;
+  > div {
+    background-color: transparent;
   }
 
-  
+  a {
+    color: black;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
