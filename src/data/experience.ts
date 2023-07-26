@@ -8,6 +8,7 @@ import {
   MSWSkill,
   MUISkill,
   NextJsSkill,
+  PrismaSkill,
   PythonSkill,
   ReactSkill,
   SupabaseSkill,
@@ -43,6 +44,7 @@ export const experiences: IExperience[] = [
       SupabaseSkill,
       MSWSkill,
       MUISkill,
+      PrismaSkill,
     ],
   },
   {

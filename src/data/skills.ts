@@ -15,6 +15,7 @@ import { CSharp } from "../svg/skills/CSharp"
 import { React } from "../svg/skills/React"
 import { Supabase } from "../svg/skills/Supabase"
 import { MSW } from "../svg/skills/MSW"
+import { Prisma } from "../svg/skills/Prisma"
 
 export type ISkillIcon = {
   icon: ReactElement<void, "svg">
@@ -73,4 +74,9 @@ export const SupabaseSkill: ISkillIcon = {
 export const MSWSkill: ISkillIcon = {
   icon: MSW(),
   iconName: "MSW",
+}
+
+export const PrismaSkill: ISkillIcon = {
+  icon: Prisma(),
+  iconName: "Prisma",
 }
