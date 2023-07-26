@@ -5,22 +5,46 @@ import {
   FlutterSkill,
   ISkillIcon,
   JavascriptSkill,
+  MSWSkill,
+  MUISkill,
+  NextJsSkill,
   PythonSkill,
   ReactSkill,
-} from "./skills";
+  SupabaseSkill,
+  TypescriptSkill,
+} from "./skills"
 
 export type IExperience = {
-  companyName: string;
-  period: string;
-  role: string;
-  companySite: string;
-  workDone: string[];
-  techStack: ISkillIcon[];
-};
+  companyName: string
+  period: string
+  role: string
+  companySite: string
+  workDone: string[]
+  techStack: ISkillIcon[]
+}
 
-export const title: string = "Experience";
+export const title: string = "Experience"
 
 export const experiences: IExperience[] = [
+  {
+    companyName: "One X Group",
+    period: "May 2023 - Jul 2023",
+    role: "Software Engineer Intern",
+    companySite: "https://www.onextech.com.sg/",
+    workDone: [
+      "Implemented a test infrastructure by mocking API endpoints to achieve an overall test coverage of 67% using MSW, React Testing Library and Playwright",
+      "Worked closely with the CTO, senior developers and project managers to implement multiple client-facing features using NextJS in Typescript and Supabase",
+      "Participated in the company's website redesign and redevelopment, maintaining 7 websites simulateneously.",
+    ],
+    techStack: [
+      NextJsSkill,
+      ReactSkill,
+      TypescriptSkill,
+      SupabaseSkill,
+      MSWSkill,
+      MUISkill,
+    ],
+  },
   {
     companyName: "Cargo Community Network",
     period: "May 2022 - Aug 2022",
@@ -51,4 +75,4 @@ export const experiences: IExperience[] = [
       ReactSkill,
     ],
   },
-];
+]
