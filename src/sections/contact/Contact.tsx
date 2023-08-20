@@ -26,7 +26,7 @@ export default function Contact(): ReactElement<"div"> {
           >
             <div className="column is-full pb-6 mb-6">
               <motion.h1
-                className="title is-1 has-text-centered"
+                className="subtitle is-3 has-text-centered"
                 variants={headerVariants}
               >
                 {ContactHeader}

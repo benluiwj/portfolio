@@ -13,11 +13,8 @@ export default function SectionTitle({ title }: Props) {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
     >
-      <div className="column  is-one-third ">
-        <motion.h1
-          className="title is-1 has-text-centered"
-          variants={headerVariants}
-        >
+      <div className="column ">
+        <motion.h1 className="title is-1" variants={headerVariants}>
           {title}
         </motion.h1>
       </div>
