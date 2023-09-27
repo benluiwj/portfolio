@@ -1,5 +1,6 @@
 import {
   CSharpSkill,
+  CSkill,
   DartSkill,
   FirebaseSkill,
   FlutterSkill,
@@ -11,31 +12,43 @@ import {
   PrismaSkill,
   PythonSkill,
   ReactSkill,
+  RustSkill,
   SupabaseSkill,
   TypescriptSkill,
-} from "./skills"
+} from "./skills";
 
 export type IExperience = {
-  companyName: string
-  period: string
-  role: string
-  companySite: string
-  workDone: string[]
-  techStack: ISkillIcon[]
-}
+  companyName: string;
+  period: string;
+  role: string;
+  companySite: string;
+  workDone: string[];
+  techStack: ISkillIcon[];
+};
 
-export const title: string = "Experience"
+export const title: string = "Experience";
 
 export const experiences: IExperience[] = [
+  {
+    companyName: "Grasshopper Asia",
+    period: "Aug 2023 - Nov 2023",
+    role: "Software Engineer Intern",
+    companySite: "https://grasshopperasia.com",
+    workDone: [
+      "Researched multiple multi-threaded loggers, gaining insights into their design choices by bench-marking their performance.",
+      "Optimized and improved the functionality of a low-latency logger while maintaining a performance difference of less than 1%.",
+    ],
+    techStack: [RustSkill],
+  },
   {
     companyName: "One X Group",
     period: "May 2023 - Jul 2023",
     role: "Software Engineer Intern",
     companySite: "https://www.onextech.com.sg/",
     workDone: [
-      "Implemented a test infrastructure by mocking API endpoints to achieve an overall test coverage of 67% using MSW, React Testing Library and Playwright",
-      "Worked closely with the CTO, senior developers and project managers to implement multiple client-facing features using NextJS in Typescript and Supabase",
-      "Participated in the company's website redesign and redevelopment, maintaining 7 websites simulateneously.",
+      "Introduced a test infrastructure with integration tests and end-to-end testing, increasing code coverage from 0% to 67%.",
+      "Enhanced a metrics dashboard, resulting in increased user productivity.",
+      "Orchestrated the simultaneous management of 7 company websites that improved site traffic and user experience.",
     ],
     techStack: [
       NextJsSkill,
@@ -54,20 +67,20 @@ export const experiences: IExperience[] = [
     companySite:
       "https://www.linkedin.com/company/cargo-community-network/?originalSubdomain=sg",
     workDone: [
-      "Improved the overall code quality and performance of an internal dashboard by rewriting existing modules.",
-      "Designed and implemented a dynamic link library which processed and handled API consumption.",
-      "Documented the work done by including UML diagrams, design decisions to facilitate smooth handing over of projects to other coworkers",
+      "Rewrote existing modules of an internal dashboard to improve the overall performance and maintainability.",
+      "Designed and implemented a library that processed and handled more than 20 load-balancers.",
+      "Documented the work done by including UML diagrams and design decisions to facilitate smooth handing over of projects to other coworkers.",
     ],
     techStack: [JavascriptSkill, CSharpSkill],
   },
   {
     companyName: "National University of Singapore",
     period: "May 2022 - Aug 2022",
-    role: "Orbital Advisor",
+    role: "Teaching Assistant",
     companySite: "https://www.nus.edu.sg/",
     workDone: [
-      "Tutored and mentored 10 students for CP2106 Orbital, an independent software development project module.",
-      "Conducted weekly zoom meetings to provide a platform for teams to share and learn from another.",
+      "Tutored and mentored 10 students for CP2106 Orbital, an independent software development project module in Summer 2022.",
+      "Tutored and mentored 12 students for CS1010 Programming Methodology, an introductory programming module in Fall 2023.",
     ],
     techStack: [
       PythonSkill,
@@ -75,6 +88,7 @@ export const experiences: IExperience[] = [
       FirebaseSkill,
       DartSkill,
       ReactSkill,
+      CSkill,
     ],
   },
-]
+];
